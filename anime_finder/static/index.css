@@ -1,0 +1,142 @@
+:root {
+    --prim-color: #d1d8e0;
+    --sec-color: #d1d8e0bf;
+    --bg-prim: #1A181E;
+    --bg-sec: #2c303a;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Maven Pro', sans-serif !important;
+    scroll-behavior: smooth;
+    background-color: var(--bg-prim);
+}
+
+/* .main {
+    height: 100vh;
+}
+
+.mirror-face {
+    color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.068);
+    filter: blur(0.09px);
+    border-width: 0.5px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.425);
+    height: 70vh;
+
+} */
+
+h1 {
+    color: var(--prim-color);
+    font-weight: 600;
+    font-size: 3rem;
+    opacity: 0.8;
+  }
+  h2,
+  p {
+    color: var(--prim-color);
+    font-weight: 400;
+    opacity: 0.8;
+  }
+  
+  h3 {
+    color: var(--bg-prim);
+    font-weight: 600;
+    opacity: 0.8;
+  }
+  
+  main {
+    min-height: 100vh;
+    background: linear-gradient(to right top, #1A181E, #2c303a);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .glass {
+    color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.068);
+    filter: blur(0.09px);
+    border-width: 0.5px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.425);
+
+    min-height: 80vh;
+    width: 85%;
+    border-radius: 2rem;
+    z-index: 2;
+    backdrop-filter: blur(1.5rem);
+    text-align: center;
+    padding: 20px;
+  }
+
+  /* Search Form */
+#search-form {
+    margin-top: 3rem;
+}
+.cont {
+    padding: 12px;
+    border: 2px dashed #d1d8e07e;
+    border-radius: 20px;
+
+}
+.search-input {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 35px;
+    padding-right: 35px;
+
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.068);
+
+    filter: blur(0.09px);
+
+    /* border-width: 0.5px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.425); */
+    border-radius: 20px;
+
+    transition: all .3s ease;
+    cursor: pointer;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-input:hover {
+    background-color: rgba(0,0,0,.5);
+}
+
+.search-input i {
+    flex: 100%;
+    font-size: 45px;
+}
+
+.search-input span {
+    padding-top: 0;
+}
+
+form input[type="file"] {
+          display: none;
+          cursor: pointer;
+ }
