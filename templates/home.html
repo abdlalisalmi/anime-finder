@@ -14,16 +14,16 @@
             <h1>Anime's Finder</h1>
             <p>Life is too short to answer all the "What is this anime's name?" questions. Let computers do that for you.</p>
             <form id="search-form">
-                <label for="search-image" class="cont">
+                <label for="search-input" class="cont">
                     <div class="search-input shadow" style="background-image: url('{% if profile.avatar %}{{profile.avatar.url}}{% else %}{% static 'img/default-avatar.svg' %}{% endif %}')">
                         <i class="uil uil-focus-add"></i>
                         <span>Add Your Image</span>
                     </div>
                 </label>
-                <input type="File" id="search-image">
+                <input type="File" id="search-input">
             </form>
 
-            <div class="history container">
+            <div class="history container" id="search-div">
                 <div class="title">
                   <h1>Last Searches</h1>
                 </div>
