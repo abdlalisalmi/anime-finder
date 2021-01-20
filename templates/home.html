@@ -13,16 +13,39 @@
         <section class="glass">
             <h1>Anime's Finder</h1>
             <p>Life is too short to answer all the "What is this anime's name?" questions. Let computers do that for you.</p>
-            <form id="search-form" action="" method="post" enctype="multipart/form-data">
-                {% csrf_token %}
+            <form id="search-form">
                 <label for="search-image" class="cont">
                     <div class="search-input shadow" style="background-image: url('{% if profile.avatar %}{{profile.avatar.url}}{% else %}{% static 'img/default-avatar.svg' %}{% endif %}')">
                         <i class="uil uil-focus-add"></i>
                         <span>Add Your Image</span>
                     </div>
                 </label>
-                <input type="File" name="image" id="search-image">
+                <input type="File" id="search-image">
             </form>
+
+            <div class="history container">
+                <div class="title">
+                  <h1>Last Searches</h1>
+                </div>
+                <div class="row justify-content-center p-0">
+                    <div class="history-item col-lg-3" style="background: url(https://tibs2.threeifbyspace.net/wp-content/uploads/2020/05/visual.jpg) center / cover no-repeat;">
+                        <div class="item-info">
+                            <h2>Attack on titan</h2>
+                        </div>
+                    </div>
+                    <div class="history-item col-lg-3" style="background: url(https://tibs2.threeifbyspace.net/wp-content/uploads/2020/05/visual.jpg) center / cover no-repeat;">
+                        <div class="item-info">
+                            <h2>Attack on titan</h2>
+                        </div>
+                    </div>
+                    <div class="history-item col-lg-3" style="background: url(https://tibs2.threeifbyspace.net/wp-content/uploads/2020/05/visual.jpg) center / cover no-repeat;">
+                        <div class="item-info">
+                            <h2>Attack on titan</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </section>
       </main>
 {% endblock content %}
