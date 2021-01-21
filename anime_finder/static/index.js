@@ -20,6 +20,31 @@ const csrftoken = getCookie('csrftoken');
 
 if (searchInput) {
     searchInput.addEventListener("change", () => {
+        
+        document.getElementById("search-div").innerHTML = `
+            <div class="loading-container">
+            <div class="loading">
+                <div>
+                    <div>
+                        <div>
+                            <div>
+                                <div>
+                                    <div>
+                                        <div>
+                                            <div>
+                                                <div> </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        `;
+
         let formData = new FormData();
         formData.append('image', searchInput.files[0]);
 
