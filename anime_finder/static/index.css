@@ -91,7 +91,7 @@ h1 {
     background-position: center;
     background-blend-mode: multiply;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
-    background-color: rgba(255, 255, 255, 0.068);
+    background-color: #1a181ed6;
     
 
     filter: blur(0.09px);
@@ -108,7 +108,7 @@ h1 {
 }
 
 .search-input:hover {
-    background-color: #1a181e82;
+    background-color: #1a181ea3;
 }
 
 .search-input i {
