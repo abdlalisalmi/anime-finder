@@ -253,7 +253,17 @@ form input[type="file"] {
   /* border-width: 0.5px;
   border-style: solid;
   border-color: rgba(255, 255, 255, 0.425); */
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.search-result-info div{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 70%;
 }
 .search-result-info h1{
     font-size: 1.5rem;
