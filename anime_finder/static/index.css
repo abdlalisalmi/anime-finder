@@ -226,3 +226,48 @@ form input[type="file"] {
     }
   }
   
+
+  .search-result-image {
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    /* box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5); */
+    height: 400px;
+    /* width: auto; */
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+.search-result-info {
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  padding: 20px;
+}
+.search-result-info h1{
+    font-size: 1.5rem;
+}
+.search-result-info h1 span{
+  font-size: 1.2rem;
+  color: #ffda79;
+}
+.search-result-info .source{
+  margin-top: 20px;
+}
+.search-result-info .source a{
+  font-size: 20px;
+  color: var(--prim-color);
+  background-color: var(--bg-prim);
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 20px;
+  transition: all .3s;
+}
+.search-result-info .source a:hover{
+  font-size: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+
+}
