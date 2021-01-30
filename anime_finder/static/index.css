@@ -43,7 +43,7 @@ h1 {
   
   main {
     min-height: 100vh;
-    background: linear-gradient(to right top, #1A181E, #2c303a);
+    /* background: linear-gradient(to right top, #1A181E, #2c303a); */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -56,9 +56,9 @@ h1 {
 
     /* background-color: rgba(255, 255, 255, 0.068);
     filter: blur(0.09px); */
-    border-width: 0.5px;
+    /* border-width: 0.5px;
     border-style: solid;
-    border-color: rgba(255, 255, 255, 0.425);
+    border-color: rgba(255, 255, 255, 0.425); */
 
     min-height: 80vh;
     width: 85%;
@@ -226,10 +226,8 @@ form input[type="file"] {
     }
   }
   
-  /* .search-result {
-    margin-top: 2erm;
-  } */
-  .search-result-image {
+
+.search-result-image {
     background-size: cover;
     background-position: center;
     background-blend-mode: multiply;
@@ -247,7 +245,7 @@ form input[type="file"] {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   padding: 20px;
-  width: 50%; 
+  width: 50%;
   background-color: rgba(255, 255, 255, 0.068);
   filter: blur(0.09px);
   /* border-width: 0.5px;
@@ -256,6 +254,7 @@ form input[type="file"] {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  text-align: center;
 }
 .search-result-info div{
   display: flex;
@@ -263,31 +262,43 @@ form input[type="file"] {
   align-items: flex-start;
   justify-content: space-evenly;
   text-align: center;
-  width: 70%;
 }
 .search-result-info h1{
     font-size: 1.5rem;
+    color: #05c46b;
+    text-transform: capitalize;
 }
-.search-result-info h1 span{
-  font-size: 1.2rem;
-  color: #ffda79;
+.search-result-info span{
+  font-size: 1rem;
+  opacity: .8;
+}
+.search-result-info span i{
+  font-size: 1.1rem;
+  color: #05c46b;
+  padding-right: 6px;
+  opacity: 1;
 }
 .search-result-info .source{
   margin-top: 20px;
 }
 .search-result-info .source a{
-  font-size: 20px;
+  font-size: 16px;
   color: var(--prim-color);
   background-color: var(--bg-prim);
   padding: 10px;
   padding-left: 20px;
   padding-right: 20px;
-  border-radius: 20px;
+  border-radius: 15px;
+  width: 100%;
+  border-width: 0.6px;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.068);
   transition: all .3s;
 }
 .search-result-info .source a:hover{
-  font-size: 20px;
-  padding-left: 30px;
-  padding-right: 30px;
-
+    background-color: rgba(255, 255, 255, 0.068);
+    filter: blur(0.09px);
+    border-width: 0.6px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.425);
 }

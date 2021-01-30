@@ -51,4 +51,6 @@ class SearchView(APIView):
             "part"              : response.get("results")[0].get("data").get("part"),
             "year"              : response.get("results")[0].get("data").get("year"),
             "source"            : response.get("results")[0].get("data").get("ext_urls")[0],
+            "similarity"        : response.get("results")[0].get("header").get("similarity"),
+            "success"           : True,
         }

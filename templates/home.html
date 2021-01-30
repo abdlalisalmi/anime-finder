@@ -2,13 +2,7 @@
 {% load static %}
 
 {% block content %}
-    <!-- <div class="container">
-        <div class="row text-center main justify-content-center">
-            <div class="col-12 mirror-face my-auto">
-                <h1>Need to know the source of this Now!</h1>
-            </div>
-        </div>
-    </div> -->
+    
     <main>
         <section class="glass">
             <h1>Anime's Finder</h1>
@@ -25,27 +19,11 @@
                 </div>
             </form>
 
-            <div class="container mt-6">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8 d-flex">
-                        <div class="search-result-image" style="background-image: url(https://tibs2.threeifbyspace.net/wp-content/uploads/2020/05/visual.jpg)">
-                        </div>
-                        <div class="search-result-info">
-                            <h1>Shingeki no Kyojin</h1>
-                            <div>
-                                <span><i class="uil uil-apps"></i> Part 4</span>
-                                <span><i class="uil uil-clock"></i> Year 2013</span>
-                                <span><i class="uil uil-chart-pie-alt"></i> similarity 80.90%</span>
-                            </div>
-                            <div class="source">
-                                <a href="#">Source</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="container mt-6" id="search-result">
+                <!-- Search result place -->
             </div>
 
-            <div class="history container" id="search-div">
+            {% comment %} <div class="history container" id="search-div">
                 <div class="title">
                   <h1>Last Searches</h1>
                 </div>
@@ -66,8 +44,12 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> {% endcomment %}
 
         </section>
-      </main>
+    </main>
+    <footer class="bg-dark text-center">
+        <a href="#">Github</a>
+        <a href="#">Github</a>
+    </footer>
 {% endblock content %}
